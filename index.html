@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Survey Form/css/style.css" />
+  </head>
+
+  <div class="container">
+    <!-- HEADER -->
+
+    <body>
+      <div class="header">
+        <h1 id="title">Some <span class="random"> random Survey form</span> u didnt ask for</h1>
+
+        <p id="description">Sorry im not good with colors</p>
+      </div>
+
+      <!-- SURVEY-FORM -->
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name(Dont try to be funny, or do, no one cares here anyway)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Here goes your email address where we will send skillbox ads every .5h"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age <span class="optional">(optional)</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="1"
+            max="120"
+            class="form-control"
+            placeholder="Enter something that triples your actual age. Will be hilarious. Ha-ha-ha..."
+          />
+        </div>
+
+        <!-- DROPDOWN -->
+        <div class="form-group">
+          <div id="dropdown">
+            <label for="quest"></label>
+            <p>How do you feel yourself today ?</p>
+            <select name="quest" id="quest" class="form-control" required>
+              <option value="Fine">I`m fine</option>
+              <option value="Bad">I`ve been better</option>
+              <option value="Matter">Does it even matter ?</option>
+              <option value="Purpose">
+                What is the purpose of all this ?
+              </option>
+              <option value="Meaning">What is the purpose of life ?</option>
+              <option value="Why">
+                What am i doing here at this point..
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <!-- RADIO -->
+        <div class="form-group">
+          <p>How do you feel about this Survey ?</p>
+          <label for="Yes">
+            <input
+              id="Yes"
+              type="radio"
+              name="would-you"
+              class="input-radio"
+            />Yes
+          </label>
+
+          <label for="No">
+            <input
+              id="No"
+              type="radio"
+              name="would-you"
+              class="input-radio"
+            />No
+          </label>
+
+          <label for="Oh. Well. Okay">
+            <input
+              id="Oh. Well. Okay"
+              type="radio"
+              name="would-you"
+              class="input-radio"
+            />Oh. Well. Okay
+          </label>
+        </div>
+
+        <!-- DROPDOWN -->
+
+        <div class="form-group">
+          <div id="dropdown">
+            <label for="quest"
+              >Why didn`t you quit this place <span class="yet">yet</span> ?</label
+            >
+            <select name="quest" id="quest" class="form-control">
+              <option value="Student">I dont think this survey is meaningless</option>
+              <option value="Raper">I like the wallpaper</option>
+              <option value="Someone">Just got a free minute. Usually im super busy. Like business-level</option>
+              <option value="Gamer">Idk just got this survey at my spam bin</option>
+              <option value="Gamer">I have nothing better to do with my life</option>
+              <option value="Gamer">Follow my instagram: jakepaul</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="form-group">
+          <p>
+            Please select the words, meaning of which you know for
+            sure
+          </p>
+          <label for="Abnegation">
+            <input
+              id="Abnegation"
+              type="checkbox"
+              value="Abnegation"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Abnegation
+          </label>
+
+          <label for="Admonish">
+            <input
+              id="Admonish"
+              type="checkbox"
+              value="Admonish"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Admonish
+          </label>
+
+          <label for="Word3">
+            <input
+              id="Word3"
+              type="checkbox"
+              value="Word3"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Word3
+          </label>
+
+          <label for="Word4">
+            <input
+              id="Word4"
+              type="checkbox"
+              value="Word4"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Word4
+          </label>
+
+          <label for="Word5">
+            <input
+              id="Word5"
+              type="checkbox"
+              value="Word5"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Word5
+          </label>
+
+          <label for="Word6">
+            <input
+              id="Word6"
+              type="checkbox"
+              value="Word6"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Idk just got all those at www.vocabulary.com/
+          </label>
+
+          <label for="Word7">
+            <input
+              id="Word7"
+              type="checkbox"
+              value="Word7"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Word7
+          </label>
+
+          <label for="hirsute">
+            <input
+              id="hirsute"
+              type="checkbox"
+              value="hirsute"
+              name="project-checkbox"
+              class="input-checkbox"
+            />Hirsute
+          </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form-group">
+          <p>This, below, is textarea</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="What are your plans for weekend ?"
+          ></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </body>
+  </div>
+</html>
